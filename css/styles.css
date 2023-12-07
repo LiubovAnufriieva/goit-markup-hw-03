@@ -1,13 +1,8 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #fff;
+    
 }
 
 a {
@@ -23,6 +18,12 @@ ul {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
+     
+}
+
+.section {
+    display: block;
+    padding-bottom: 120px;
 }
 
 /* Header section */ 
@@ -33,7 +34,8 @@ ul {
     justify-content: space-between;
     padding-top: 24px;
     padding-bottom: 24px;
-   
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    
 }  
 
 .logo {
@@ -61,9 +63,9 @@ ul {
     gap: 40px;
 }
 
-.nav-list-item:hover,
-.nav-list-item:focus,
-.nav-list-item:active {
+.nav-list-link:hover,
+.nav-list-link:focus,
+.nav-list-link:active {
     color: #404BBF;
 }
 
@@ -75,8 +77,8 @@ ul {
     color: #2E2F42;
 }
 
-.address-item:hover,
-.address-item:focus {
+.address-link:hover,
+.address-link:focus {
     color: #404BBF;
 }
 
@@ -93,8 +95,11 @@ ul {
 }
 
 /* Hero section */
-.hero-page {
+.hero-container {
     background-color: #2E2F42;
+   
+ 
+  
 }
 
 .hero-title {
@@ -104,8 +109,8 @@ ul {
     line-height: 1.07em;
     letter-spacing: 0.02em;
     text-align: center;
-    display: flex;
-
+    width: 496px;
+    
 }
 
 .hero-button:hover,
@@ -122,6 +127,14 @@ ul {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     cursor: pointer;
+   
+    padding: 16px 32px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+   
+   
 }
 
 /* Benefit section */
@@ -138,13 +151,30 @@ ul {
     overflow: hidden;
 }
 
-.benefit-item {
+.benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 1128px;
+    
+    flex-shrink: 0;
+}
+
+.benefits-item {
+    display: inline;
+    width: calc((100% - 72px)/3);
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.benefit-subtitle {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2em;
     letter-spacing: 0.02em;
     text-align: left;
     color: #2e2f42;
+
 }
 
 .benefit-text {
@@ -228,6 +258,8 @@ ul {
 /* Footer section */
 .footer-block {
     background-color: #2E2F42;
+    width: 1440px;
+    height: 312px;
 }
 
 .footer-text {
@@ -236,4 +268,6 @@ ul {
     font-weight: 400;
     line-height: 1.5em;
     letter-spacing: 0.02em;
+    width: 264px;
+    margin-bottom: 100px;
 }
