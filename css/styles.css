@@ -22,7 +22,7 @@ img {
 .container {
     max-width: 1158px;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+    
 }
 
 .section {
@@ -39,8 +39,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 24px;
-  
+    padding: 0 15px;
 }  
 
 .header-nav {
@@ -204,7 +203,7 @@ img {
     line-height: 1.2em;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
+    margin: 0 0 8px 0;
 }
 
 .benefit-text {
@@ -214,6 +213,7 @@ img {
     font-weight: 400;
     line-height: 1.5em;
     letter-spacing: 0.02em;
+    margin: 0;
 }
 
 /* Team section */
@@ -243,7 +243,8 @@ img {
     background: var(--WHITE, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     width: calc((100% - 72px) / 4);
-   
+    margin: 0;
+    padding: 0;
 }
 
 .team-title {
@@ -264,12 +265,11 @@ img {
     max-width: 100%;
     height: auto;
     object-fit: contain;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .team-text-container {
     padding: 32px 0;
-    
 }
 
 .team-item {
@@ -280,6 +280,7 @@ img {
     color: #2e2f42;
     text-align: center;
     margin-bottom: 8px;
+    margin-top: 0;
 }
 
 .team-text {
@@ -289,7 +290,7 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
-
+    margin: 0;
 }
 
 /* Portfolio section */
@@ -346,6 +347,7 @@ img {
     color: #2e2f42;
     text-align: left;
     margin-bottom: 8px;
+    margin-top: 0;
 }
 
 .portfolio-text {
@@ -355,6 +357,7 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: left;
+    margin: 0;
 }
 
 /* Footer section */
@@ -372,10 +375,10 @@ img {
 
 .footer-logo { 
     width: 264px;
-    margin-bottom: 100px;
     margin-left: 156px;
     display: inline-block;
     margin-bottom: 16px;
+    margin-top: 0;
   }
 
 
@@ -386,6 +389,6 @@ img {
     line-height: 1.5em;
     letter-spacing: 0.02em;
     max-width: 264px;
-    margin-bottom: 100px;
+    margin-bottom: 0;
     margin-left: 156px;
 }
